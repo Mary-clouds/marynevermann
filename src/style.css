@@ -103,9 +103,7 @@ footer .btn-primary:hover {
   color: var(--tertiary-color);
   text-decoration: underline;
 }
-#appRow:hover {
-  box-shadow: 0 20px 30px 20px rgba(0, 0, 0, 0.3);
-}
+
 #about-title {
   padding-top: 80px;
 }
@@ -172,6 +170,11 @@ footer .btn-primary:hover {
 .grid-2-columns{
   grid-template-columns: 1fr 1fr ;
 }
+.grid-3-columns{
+  grid-template-columns: 3fr 3fr 3fr;
+  padding-top: 10px;
+  overflow-x: auto;
+}
 .work-link,
 .contact-info-link {
   background: var(--primary-color);
@@ -183,9 +186,76 @@ footer .btn-primary:hover {
 .contact-info-link:hover {
   box-shadow: 0 10px 20px 10px var(--tertiary-color);
 }
-.container {
-  padding-top: 80px;
-  margin-top: 30px;
+
+.table-container{
+  width: 100%;
+  white-space: nowrap;
+}
+table{
+  display: flex;
+}
+tbody{
+  display: flex;
+}
+tr{
+  display: flex;
+  justify-content: center;
+}
+td{
+  overflow-x:auto;
+  padding: 20px;
+}
+
+.project-container{
+  background: var(--secondary-color);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: var(--box-shadow);
+  width: 500px;
+}
+.project-container:hover{
+  box-shadow: var(--tertiary-color);
+}
+
+.project-header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.project-header h5{
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.project-logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary-color);
+  border-radius: 8px;
+  box-shadow: var(--tertiary-color);
+  width: 50px;
+  height: 50px;
+}
+.project-logo i{
+  font-size: 24px;
+
+}
+.project-info a{
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+.project-info a:hover{
+  color: var(--secondary-color);
+  background: var(--primary-color);
 }
 .contact-link {
   background-color: var(--primary-color);
@@ -228,11 +298,5 @@ footer .btn-primary:hover {
     font-size: 38px;
   }
 
-  .project-description {
-    padding: 0;
-    text-align: center;
-  }
-  .mini-me {
-    margin-left: 70px;
-  }
+ 
 }
