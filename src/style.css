@@ -304,14 +304,13 @@ td{
   h4 {
     font-size: 38px;
   }
- grid{
+ .grid{
   grid-template-columns: 1fr;
   grid-gap:32px;
  }
  section{
   padding: 30px;
  }
- img{
-  aspect-ratio: 16/9;
- }
+
+ 
 }
